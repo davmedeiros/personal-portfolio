@@ -1,1 +1,10 @@
 @import 'normalize.css/normalize.css';
+
+:root {
+  --color-alpha: #0783a2;
+  --color-beta: #7c75ca;
+  --color-gamma: #d88f39;
+  --color-psi: #ca7599;
+  --color-omega: #5e8f4d;
+  --color-kappa: #4692d9;
+}
