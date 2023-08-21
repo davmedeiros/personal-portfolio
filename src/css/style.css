@@ -2,7 +2,7 @@
 @import './fonts.css';
 
 :root {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Roboto', arial;
   --color-default-light: #ffffff;
   --color-default-dark: #000000;
   --color-alpha: #0783a2;
@@ -22,6 +22,7 @@ header {
 .cover {
   display: grid;
   grid-template: 1fr / 1fr;
+  font-family: 'Playfair Display', serif;
 }
 
 .cover img {
