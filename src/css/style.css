@@ -11,22 +11,26 @@
   --color-psi: #ca7599;
   --color-omega: #5e8f4d;
   --color-kappa: #4692d9;
+  --shadow-box: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
 header {
   min-height: 844px;
   background: url(../images/curved-triangle.svg) no-repeat;
   background-size: cover;
+  padding-top: 40px;
 }
 
 .cover {
   display: grid;
   grid-template: 1fr / 1fr;
+  margin: 0 40px;
+  box-shadow: var(--shadow-box);
 }
 
 .cover img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   grid-row: 1 / -1;
   grid-column: 1 / -1;
 }
@@ -36,7 +40,7 @@ header {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
   align-self: end;
-  font-size: 5rem;
+  font-size: 4.3rem;
   color: var(--color-default-light);
   margin: 0 0 0 15px;
   text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.4);
