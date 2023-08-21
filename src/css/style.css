@@ -5,6 +5,7 @@
   font-family: 'Roboto', arial;
   --color-default-light: #ffffff;
   --color-default-dark: #000000;
+  --color-default-dark-soft: #212529;
   --color-alpha: #0783a2;
   --color-beta: #7c75ca;
   --color-gamma: #d88f39;
@@ -21,10 +22,16 @@ header {
   padding-top: 40px;
 }
 
+header,
+main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .cover {
   display: grid;
   grid-template: 1fr / 1fr;
-  margin: 0 40px;
+  margin: 0 20px;
   box-shadow: var(--shadow-box);
 }
 
@@ -35,7 +42,8 @@ header {
   grid-column: 1 / -1;
 }
 
-.cover p {
+.cover h1 {
+  font-weight: 400;
   font-family: 'Playfair Display', serif;
   grid-row: 1 / -1;
   grid-column: 1 / -1;
@@ -44,4 +52,16 @@ header {
   color: var(--color-default-light);
   margin: 0 0 0 15px;
   text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.4rem;
+  color: var(--color-default-dark-soft);
 }
