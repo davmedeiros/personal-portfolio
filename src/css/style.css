@@ -107,3 +107,53 @@ p {
 .project-screenshot.personal {
   background-color: var(--color-beta);
 }
+
+.project-screenshot.professional {
+  background-color: var(--color-gamma);
+}
+
+.project-screenshot.philanthropy {
+  background-color: var(--color-kappa);
+}
+
+.project-screenshot.culture {
+  background-color: var(--color-psi);
+}
+
+.project-screenshot.misc {
+  background-color: var(--color-omega);
+}
+
+.project-links {
+  display: grid;
+  grid-template: 32px / repeat(2, 32px);
+  gap: 15px;
+}
+
+.project-details {
+  display: grid;
+  grid-template: 64px 1fr / 1fr;
+  gap: 10px;
+}
+
+.project-details > div {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.project-details > p {
+  padding: 0 10px;
+  margin: 0;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.7rem;
+  font-family: var(--font-fancy);
+  font-weight: 400;
+}
