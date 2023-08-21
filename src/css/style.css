@@ -71,5 +71,5 @@ p {
   justify-self: center;
   display: grid;
   grid-template: 36px / repeat(3, 36px);
-  gap: 10px;
+  gap: 25px;
 }
