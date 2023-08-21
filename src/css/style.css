@@ -24,7 +24,6 @@ body {
 
 header {
   display: grid;
-  min-height: 844px;
   background: url(../images/curved-triangle.svg) no-repeat;
   background-size: cover;
   padding-top: 40px;
@@ -38,9 +37,10 @@ main,
 }
 
 .cover {
+  max-width: 520px;
   display: grid;
   grid-template: 1fr / 1fr;
-  margin: 0 20px;
+  margin: 0 10px;
   box-shadow: var(--shadow-box);
 }
 
@@ -59,8 +59,12 @@ main,
   align-self: end;
   font-size: 4.3rem;
   color: var(--color-default-light);
-  margin: 0 0 0 15px;
+  margin: 0 0 10px 15px;
   text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.about {
+  display: grid;
 }
 
 h2 {
@@ -99,7 +103,6 @@ p {
   display: grid;
   place-items: center;
   font-size: 3rem;
-  padding: 40px;
   text-align: center;
   font-family: var(--font-fancy);
   color: var(--color-default-light);
@@ -182,4 +185,29 @@ h3 {
 footer > img {
   width: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 1054px) {
+  header {
+    grid-auto-flow: column;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .about {
+    background-color: var(--color-default-light);
+    box-shadow: var(--shadow-box);
+    height: 500px;
+    align-self: center;
+    padding: 40px;
+  }
+
+  .cover {
+    margin-right: 0;
+    margin-left: 100px;
+  }
+
+  .contacts {
+    text-align: center;
+  }
 }
