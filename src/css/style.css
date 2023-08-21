@@ -1,6 +1,8 @@
 @import 'normalize.css/normalize.css';
 
 :root {
+  --color-default-light: #ffffff;
+  --color-default-dark: #000000;
   --color-alpha: #0783a2;
   --color-beta: #7c75ca;
   --color-gamma: #d88f39;
@@ -13,4 +15,25 @@ header {
   min-height: 844px;
   background: url(../images/curved-triangle.svg) no-repeat;
   background-size: cover;
+}
+
+.cover {
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+.cover img {
+  width: 100%;
+  object-fit: cover;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+.cover p {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  align-self: end;
+  font-size: 5rem;
+  color: var(--color-default-light);
+  margin: 0;
 }
