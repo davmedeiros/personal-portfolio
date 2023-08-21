@@ -22,7 +22,6 @@ header {
 .cover {
   display: grid;
   grid-template: 1fr / 1fr;
-  font-family: 'Playfair Display', serif;
 }
 
 .cover img {
@@ -33,10 +32,11 @@ header {
 }
 
 .cover p {
+  font-family: 'Playfair Display', serif;
   grid-row: 1 / -1;
   grid-column: 1 / -1;
   align-self: end;
   font-size: 5rem;
   color: var(--color-default-light);
-  margin: 0;
+  margin: 0 0 0 15px;
 }
