@@ -8,3 +8,9 @@
   --color-omega: #5e8f4d;
   --color-kappa: #4692d9;
 }
+
+header {
+  min-height: 844px;
+  background: url(../images/curved-triangle.svg) no-repeat;
+  background-size: cover;
+}
