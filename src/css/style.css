@@ -2,7 +2,6 @@
 @import './fonts.css';
 
 :root {
-  font-family: 'Roboto', arial;
   --color-default-light: #ffffff;
   --color-default-dark: #000000;
   --color-default-dark-soft: #212529;
@@ -13,6 +12,14 @@
   --color-omega: #5e8f4d;
   --color-kappa: #4692d9;
   --shadow-box: 0 2px 12px rgba(0, 0, 0, 0.6);
+  --font-fancy: 'Playfair Display', serif;
+  --font-simple: 'Roboto', arial;
+  font-family: var(--font-simple);
+}
+
+body {
+  display: grid;
+  gap: 60px;
 }
 
 header {
@@ -45,7 +52,7 @@ main {
 
 .cover h1 {
   font-weight: 400;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-fancy);
   grid-row: 1 / -1;
   grid-column: 1 / -1;
   align-self: end;
@@ -56,7 +63,7 @@ main {
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-fancy);
   text-align: center;
   font-size: 2.5rem;
   font-weight: 400;
@@ -72,4 +79,28 @@ p {
   display: grid;
   grid-template: 36px / repeat(3, 36px);
   gap: 25px;
+}
+
+.projects {
+  gap: 40px;
+  display: grid;
+  grid-auto-rows: 500px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project {
+  outline: 1px solid black;
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+}
+
+.project-screenshot {
+  display: grid;
+  content: 'screenshot of project';
+  outline: 1px solid red;
+  place-items: center;
+  font-size: 3rem;
+  padding: 40px;
+  text-align: center;
+  font-family: var(--font-fancy);
 }
