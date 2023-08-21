@@ -16,6 +16,7 @@
 }
 
 header {
+  display: grid;
   min-height: 844px;
   background: url(../images/curved-triangle.svg) no-repeat;
   background-size: cover;
@@ -64,4 +65,11 @@ h2 {
 p {
   font-size: 1.4rem;
   color: var(--color-default-dark-soft);
+}
+
+.socials {
+  justify-self: center;
+  display: grid;
+  grid-template: 36px / repeat(3, 36px);
+  gap: 10px;
 }
