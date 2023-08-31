@@ -1,3 +1,1 @@
-# personal-portfolio
-
-TOP - Personal Portfolio
+# TOP - Educational Project - Personal Portfolio
